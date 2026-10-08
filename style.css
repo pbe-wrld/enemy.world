@@ -1,401 +1,1008 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>PUBLIC ENEMY</title>
-  <meta name="description" content="PUBLIC ENEMY — THREAT TO EVERYONE">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="site-header">
-  <a href="#home" class="brand">
-    <span class="brand-name">PUBLIC ENEMY</span>
-    <span class="brand-sub">THREAT TO EVERYONE</span>
-  </a>
-
-  <nav class="main-nav">
-    <a href="#members">Collective</a>
-    <a href="#about">About</a>
-    <a href="#members">Members</a>
-  </nav>
-</header>
-
-
-<main id="home">
-
-  <!-- HERO -->
-  <section class="hero">
-
-    <div class="hero-noise"></div>
-
-    <div class="hero-top-line">
-      <span>PUBLIC ENEMY / PBE</span>
-      <span>EST. 2026</span>
-    </div>
-
-    <div class="hero-content">
-
-      <div class="hero-logo hero-logo-left">
-        <img
-          src="https://media.discordapp.net/attachments/1375129451175608402/1557777420231249970/3d6353f7-4c7c-4759-823c-2021f8bc4632-removebg-preview.png?ex=6ac908c7&is=6ac7b747&hm=d3f810127907066b6cb791d142bb9edb8484edef1f7cb12097f06fd69e57d9c2&=&format=webp&quality=lossless"
-          alt="PUBLIC ENEMY logo"
-        >
-      </div>
-
-
-      <div class="hero-center">
-
-        <span class="eyebrow">
-          PUBLIC ENEMY / COLLECTIVE
-        </span>
-
-        <h1>
-          PUBLIC<br>
-          <span>ENEMY.</span>
-        </h1>
-
-        <strong class="hero-statement">
-          THREAT TO<br>
-          EVERYONE
-        </strong>
-
-        <p>
-          A collective built around identity,
-          loyalty and presence.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#members" class="button button-light">
-            ENTER COLLECTIVE
-            <span>↓</span>
-          </a>
-
-          <a href="#about" class="button button-outline">
-            ABOUT US
-          </a>
-        </div>
-
-      </div>
-
-
-      <div class="hero-logo hero-logo-right">
-        <img
-          src="https://media.discordapp.net/attachments/1375129451175608402/1557777551248859196/53142c9b-2b97-40ad-9b9b-8e750d686eab-removebg-preview.png?ex=6ac908e6&is=6ac7b766&hm=48f0d061664a54f7776607a888a2d021c561c77a9885942b6884e34cad215aa2&=&format=webp&quality=lossless"
-          alt="PUBLIC ENEMY logo"
-        >
-      </div>
-
-    </div>
-
-    <div class="hero-bottom">
-      <span>COLLECTIVE BELOW</span>
-      <span class="arrow">↓</span>
-    </div>
-
-  </section>
-
-
-  <!-- RIBBON -->
-  <div class="ribbon">
-    <span>PUBLIC ENEMY</span>
-    <b>/</b>
-    <span>PBE</span>
-    <b>/</b>
-    <span>THREAT TO EVERYONE</span>
-    <b>/</b>
-    <span>PUBLIC ENEMY</span>
-    <b>/</b>
-    <span>PBE</span>
-  </div>
-
-
-  <!-- MEMBERS -->
-  <section class="directory" id="members">
-
-    <div class="section-heading">
-      <span class="eyebrow">
-        COLLECTIVE / PUBLIC ENEMY
-      </span>
-
-      <h2>
-        COLLECTIVE<span>.</span>
-      </h2>
-
-      <p>
-        Find someone inside the collective.
-      </p>
-    </div>
-
-
-    <div class="member-search">
-      <label for="memberSearch">
-        LOOK FOR SOMEBODY
-      </label>
-
-      <div class="search-box">
-        <span class="search-icon">⌕</span>
-
-        <input
-          id="memberSearch"
-          type="search"
-          placeholder="Name or handle"
-          autocomplete="off"
-        >
-      </div>
-    </div>
-
-
-    <div class="filters">
-
-      <button class="filter active" data-filter="all">
-        Everyone
-      </button>
-
-      <button class="filter" data-filter="godfather">
-        Godfather
-      </button>
-
-      <button class="filter" data-filter="highcouncil">
-        Highcouncil
-      </button>
-
-      <button class="filter" data-filter="member">
-        Members
-      </button>
-
-    </div>
-
-
-    <p class="result-count" id="resultCount">
-      13 members shown
-    </p>
-
-
-    <div class="member-groups">
-
-      <!-- GODFATHER -->
-      <section class="member-group" data-group="godfather">
-
-        <div class="group-heading">
-          <span>Godfather</span>
-          <small>FOUNDERS</small>
-        </div>
-
-        <div class="member-grid">
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">SA</div>
-            <div class="member-info">
-              <strong>salvatore.am</strong>
-              <span>@salvatore.am</span>
-            </div>
-            <div class="member-rank">GODFATHER <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">UJ</div>
-            <div class="member-info">
-              <strong>usjrjinu</strong>
-              <span>@usjrjinu</span>
-            </div>
-            <div class="member-rank">GODFATHER <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">NK</div>
-            <div class="member-info">
-              <strong>noki202</strong>
-              <span>@noki202</span>
-            </div>
-            <div class="member-rank">GODFATHER <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">YX</div>
-            <div class="member-info">
-              <strong>yoshiiixzz</strong>
-              <span>@yoshiiixzz</span>
-            </div>
-            <div class="member-rank">GODFATHER <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">LW</div>
-            <div class="member-info">
-              <strong>leywannafck</strong>
-              <span>@leywannafck</span>
-            </div>
-            <div class="member-rank">GODFATHER <b>↗</b></div>
-          </a>
-
-        </div>
-      </section>
-
-
-      <!-- HIGHCOUNCIL -->
-      <section class="member-group" data-group="highcouncil">
-
-        <div class="group-heading">
-          <span>Highcouncil</span>
-          <small>COUNCIL</small>
-        </div>
-
-        <div class="member-grid">
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">LB</div>
-            <div class="member-info">
-              <strong>Lebwak</strong>
-              <span>@lebwak</span>
-            </div>
-            <div class="member-rank">HIGHCOUNCIL <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">MJ</div>
-            <div class="member-info">
-              <strong>Makijames</strong>
-              <span>@makijames</span>
-            </div>
-            <div class="member-rank">HIGHCOUNCIL <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">ST</div>
-            <div class="member-info">
-              <strong>Sainty</strong>
-              <span>@sainty</span>
-            </div>
-            <div class="member-rank">HIGHCOUNCIL <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">SN</div>
-            <div class="member-info">
-              <strong>Sin</strong>
-              <span>@sin</span>
-            </div>
-            <div class="member-rank">HIGHCOUNCIL <b>↗</b></div>
-          </a>
-
-        </div>
-      </section>
-
-
-      <!-- MEMBERS -->
-      <section class="member-group" data-group="member">
-
-        <div class="group-heading">
-          <span>Members</span>
-          <small>COLLECTIVE</small>
-        </div>
-
-        <div class="member-grid">
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">TY</div>
-            <div class="member-info">
-              <strong>Tyler</strong>
-              <span>@tyler</span>
-            </div>
-            <div class="member-rank">MEMBER <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">NN</div>
-            <div class="member-info">
-              <strong>Nonoy</strong>
-              <span>@nonoy</span>
-            </div>
-            <div class="member-rank">MEMBER <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">GF</div>
-            <div class="member-info">
-              <strong>Garfield</strong>
-              <span>@garfield</span>
-            </div>
-            <div class="member-rank">MEMBER <b>↗</b></div>
-          </a>
-
-          <a class="member-card" href="#">
-            <div class="member-avatar">ST</div>
-            <div class="member-info">
-              <strong>Stro</strong>
-              <span>@stro</span>
-            </div>
-            <div class="member-rank">MEMBER <b>↗</b></div>
-          </a>
-
-        </div>
-      </section>
-
-    </div>
-  </section>
-
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <div class="about-logo">
-      <img
-        src="https://media.discordapp.net/attachments/1375129451175608402/1557777551248859196/53142c9b-2b97-40ad-9b9b-8e750d686eab-removebg-preview.png?ex=6ac908e6&is=6ac7b766&hm=48f0d061664a54f7776607a888a2d021c561c77a9885942b6884e34cad215aa2&=&format=webp&quality=lossless"
-        alt="PUBLIC ENEMY logo"
-      >
-    </div>
-
-    <div class="about-content">
-
-      <span class="eyebrow">
-        ABOUT PUBLIC ENEMY
-      </span>
-
-      <h2>
-        OUR OWN<br>
-        <em>SPACE.</em>
-      </h2>
-
-      <p>
-        PUBLIC ENEMY is a collective built around
-        identity, loyalty and the people behind it.
-        This is our space to represent the collective
-        and the people who make it what it is.
-      </p>
-
-      <a class="button button-dark" href="#members">
-        VIEW COLLECTIVE
-      </a>
-
-    </div>
-
-  </section>
-
-</main>
-
-
-<footer class="site-footer">
-
-  <div class="footer-brand">
-    <strong>PUBLIC ENEMY</strong>
-    <span>THREAT TO EVERYONE</span>
-  </div>
-
-  <span>PBE / 2026</span>
-
-  <a href="#home">
-    BACK TO TOP ↑
-  </a>
-
-</footer>
-
-
-<script src="script.js"></script>
-
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --black: #050505;
+  --white: #f5f5f2;
+  --gray: #a4a4a0;
+  --line: rgba(255,255,255,.14);
+  --soft: rgba(255,255,255,.06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: Inter, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+
+/* LOADER */
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: #050505;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: loaderOut 1s 1.4s forwards;
+  pointer-events: none;
+}
+
+.loader-logo {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -.08em;
+}
+
+.loader-line {
+  width: 100px;
+  height: 1px;
+  background: white;
+  margin-top: 18px;
+  transform-origin: left;
+  animation: loaderLine 1.2s ease forwards;
+}
+
+@keyframes loaderLine {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes loaderOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+/* HEADER */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255,255,255,.5);
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: -.05em;
+}
+
+.brand b,
+.brand small {
+  display: block;
+}
+
+.brand b {
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
+.brand small {
+  font-size: 7px;
+  color: #888;
+  letter-spacing: .2em;
+  margin-top: 4px;
+}
+
+.header nav {
+  display: flex;
+  gap: 36px;
+}
+
+.header nav a {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: #aaa;
+  transition: .3s;
+}
+
+.header nav a:hover {
+  color: white;
+}
+
+.header-enter {
+  font-size: 10px;
+  letter-spacing: .15em;
+  border: 1px solid rgba(255,255,255,.35);
+  padding: 12px 16px;
+  transition: .3s;
+}
+
+.header-enter:hover {
+  background: white;
+  color: black;
+}
+
+.header-enter span {
+  margin-left: 12px;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050505;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: -4%;
+  background-image: url("https://media.discordapp.net/attachments/1375129451175608402/1557773782985478164/content.png?ex=6ac90563&is=6ac7b3e3&hm=e4124d9892230addf811");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  opacity: .72;
+  transform: scale(1.04);
+  animation: bgMove 18s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.hero-dark {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.92), rgba(0,0,0,.4), rgba(0,0,0,.92)),
+    linear-gradient(0deg, rgba(0,0,0,.9), transparent 45%, rgba(0,0,0,.75));
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  opacity: .13;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
+}
+
+.hero-top {
+  position: absolute;
+  top: 105px;
+  left: 42px;
+  right: 42px;
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+  font-size: 9px;
+  letter-spacing: .2em;
+}
+
+.hero-center {
+  position: relative;
+  z-index: 5;
+  width: min(900px, 90%);
+  text-align: center;
+}
+
+.hero-kicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 9px;
+  letter-spacing: .3em;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.hero-kicker span {
+  width: 25px;
+  height: 1px;
+  background: #888;
+}
+
+.hero-center h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(85px, 14vw, 205px);
+  line-height: .76;
+  letter-spacing: -.09em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 10px 60px rgba(0,0,0,.5);
+}
+
+.hero-center h1 em {
+  display: block;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,.85);
+}
+
+.hero-sub {
+  margin-top: 45px;
+}
+
+.hero-sub strong {
+  display: block;
+  font-size: 12px;
+  letter-spacing: .35em;
+}
+
+.hero-sub p {
+  margin: 13px auto 0;
+  max-width: 400px;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.primary-btn,
+.secondary-btn {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 0 21px;
+  font-size: 9px;
+  letter-spacing: .18em;
+  transition: .3s;
+}
+
+.primary-btn {
+  background: white;
+  color: black;
+}
+
+.primary-btn:hover {
+  background: #ccc;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  border: 1px solid rgba(255,255,255,.4);
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,.1);
+  transform: translateY(-3px);
+}
+
+.hero-logo {
+  position: absolute;
+  z-index: 4;
+  width: 230px;
+  opacity: .72;
+  filter: grayscale(100%);
+  transition: .5s;
+}
+
+.hero-logo img {
+  width: 100%;
+  display: block;
+}
+
+.hero-logo-left {
+  left: 4%;
+  top: 31%;
+  transform: rotate(-8deg);
+}
+
+.hero-logo-right {
+  right: 4%;
+  bottom: 20%;
+  transform: rotate(8deg);
+}
+
+.hero-logo:hover {
+  opacity: 1;
+  transform: rotate(0) scale(1.05);
+}
+
+.side-label {
+  position: absolute;
+  z-index: 5;
+  color: #888;
+  font-size: 8px;
+  letter-spacing: .2em;
+  writing-mode: vertical-rl;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.side-label i {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: #777;
+}
+
+.left-label {
+  left: 25px;
+  top: 42%;
+}
+
+.right-label {
+  right: 25px;
+  top: 42%;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 25px;
+  left: 42px;
+  right: 42px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #888;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+.hero-bottom span:last-child {
+  color: white;
+  font-size: 16px;
+}
+
+.scroll-line {
+  width: 70px;
+  height: 1px;
+  background: #666;
+}
+
+
+/* MARQUEE */
+
+.marquee {
+  background: #eee;
+  color: #090909;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 18px 0;
+  border-bottom: 1px solid #111;
+}
+
+.marquee div {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  animation: marquee 25s linear infinite;
+  padding-left: 30px;
+}
+
+.marquee span {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.marquee b {
+  font-size: 10px;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* MEMBERS */
+
+.members-section {
+  position: relative;
+  background: #070707;
+  padding: 150px 6vw;
+}
+
+.section-number {
+  position: absolute;
+  top: 45px;
+  left: 6vw;
+  color: #555;
+  font-size: 9px;
+  letter-spacing: .2em;
+}
+
+.section-heading {
+  max-width: 900px;
+}
+
+.eyebrow {
+  font-size: 9px;
+  color: #777;
+  letter-spacing: .3em;
+}
+
+.section-heading h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(60px, 10vw, 140px);
+  line-height: .85;
+  letter-spacing: -.08em;
+  margin-top: 22px;
+}
+
+.section-heading h2 span {
+  color: transparent;
+  -webkit-text-stroke: 1px #777;
+}
+
+.section-heading p {
+  margin-top: 25px;
+  color: #888;
+  font-size: 12px;
+}
+
+.member-tools {
+  margin-top: 90px;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 280px;
+}
+
+.search span {
+  font-size: 20px;
+  color: #777;
+}
+
+.search input {
+  width: 100%;
+  background: none;
+  border: 0;
+  outline: none;
+  color: white;
+  font-size: 11px;
+}
+
+.search input::placeholder {
+  color: #666;
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  color: #777;
+  background: transparent;
+  border: 1px solid #242424;
+  padding: 10px 13px;
+  font-size: 8px;
+  letter-spacing: .15em;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.filter:hover,
+.filter.active {
+  background: white;
+  color: black;
+  border-color: white;
+}
+
+.member-count {
+  color: #666;
+  font-size: 8px;
+  letter-spacing: .2em;
+  margin: 30px 0;
+}
+
+.member-group {
+  margin-top: 65px;
+}
+
+.member-group.hidden {
+  display: none;
+}
+
+.group-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+}
+
+.group-title span {
+  font-size: 11px;
+  letter-spacing: .2em;
+  font-weight: 700;
+}
+
+.group-title small {
+  font-size: 7px;
+  color: #555;
+  letter-spacing: .2em;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.member-card {
+  position: relative;
+  min-height: 120px;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.member-card:nth-child(even) {
+  border-right: 0;
+}
+
+.member-card:hover {
+  background: #111;
+}
+
+.member-card.hidden {
+  display: none;
+}
+
+.card-number {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  color: #333;
+  font-size: 8px;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  border: 1px solid #444;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  transition: .3s;
+}
+
+.member-card:hover .avatar {
+  background: white;
+  color: black;
+  border-color: white;
+}
+
+.member-name strong,
+.member-name span {
+  display: block;
+}
+
+.member-name strong {
+  font-size: 13px;
+}
+
+.member-name span {
+  margin-top: 6px;
+  color: #666;
+  font-size: 9px;
+}
+
+.member-role {
+  margin-left: auto;
+  font-size: 7px;
+  letter-spacing: .15em;
+  color: #666;
+}
+
+.member-role b {
+  color: white;
+  margin-left: 10px;
+}
+
+
+/* ABOUT */
+
+.about-section {
+  min-height: 720px;
+  position: relative;
+  overflow: hidden;
+  background: #e8e8e4;
+  color: #080808;
+  display: flex;
+  align-items: center;
+  padding: 130px 12vw;
+}
+
+.about-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 80% 50%, rgba(0,0,0,.1), transparent 35%),
+    linear-gradient(110deg, #e8e8e4, #cfcfcb);
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.about-content .eyebrow {
+  color: #666;
+}
+
+.about-content h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(70px, 10vw, 145px);
+  line-height: .8;
+  letter-spacing: -.09em;
+  margin-top: 25px;
+}
+
+.about-content h2 em {
+  display: block;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 1px #111;
+}
+
+.about-content p {
+  max-width: 420px;
+  margin-top: 40px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.dark-btn {
+  margin-top: 30px;
+  display: inline-flex;
+  gap: 30px;
+  align-items: center;
+  background: #080808;
+  color: white;
+  padding: 15px 20px;
+  font-size: 8px;
+  letter-spacing: .2em;
+  transition: .3s;
+}
+
+.dark-btn:hover {
+  transform: translateY(-3px);
+  background: #222;
+}
+
+.about-logo {
+  position: absolute;
+  right: 8%;
+  width: min(38vw, 500px);
+  opacity: .17;
+  filter: grayscale(100%);
+}
+
+.about-logo img {
+  width: 100%;
+}
+
+
+/* FOOTER */
+
+footer {
+  min-height: 130px;
+  background: #050505;
+  border-top: 1px solid #222;
+  padding: 35px 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer strong,
+footer span {
+  display: block;
+}
+
+footer strong {
+  font-size: 14px;
+  letter-spacing: .1em;
+}
+
+footer span,
+footer p,
+footer a {
+  color: #666;
+  font-size: 8px;
+  letter-spacing: .2em;
+  margin-top: 6px;
+}
+
+footer a {
+  transition: .3s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0,0,0,.78);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  padding: 20px;
+}
+
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  position: relative;
+  width: min(430px, 100%);
+  background: #0b0b0b;
+  border: 1px solid #333;
+  padding: 45px;
+  text-align: center;
+  transform: translateY(20px);
+  transition: .3s;
+}
+
+.modal.open .modal-box {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  background: none;
+  color: #777;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal-label {
+  color: #666;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+.modal-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 35px auto 25px;
+  border: 1px solid #555;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.modal-box h3 {
+  font-size: 22px;
+}
+
+.modal-box p {
+  margin-top: 8px;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .2em;
+}
+
+.modal-line {
+  width: 100%;
+  height: 1px;
+  background: #222;
+  margin: 30px 0 20px;
+}
+
+.modal-box > span:last-child {
+  color: #555;
+  font-size: 7px;
+  letter-spacing: .2em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .header {
+    padding: 18px 20px;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .header-enter {
+    padding: 10px 12px;
+  }
+
+  .hero-top {
+    left: 20px;
+    right: 20px;
+    top: 90px;
+  }
+
+  .hero-center h1 {
+    font-size: clamp(70px, 21vw, 130px);
+  }
+
+  .hero-logo {
+    width: 130px;
+    opacity: .3;
+  }
+
+  .hero-logo-left {
+    left: -20px;
+    top: 25%;
+  }
+
+  .hero-logo-right {
+    right: -20px;
+    bottom: 18%;
+  }
+
+  .side-label {
+    display: none;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 210px;
+  }
+
+  .hero-bottom {
+    left: 20px;
+    right: 20px;
+  }
+
+  .members-section {
+    padding: 120px 20px 90px;
+  }
+
+  .section-number {
+    left: 20px;
+  }
+
+  .member-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .filters {
+    width: 100%;
+  }
+
+  .filter {
+    flex: 1;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card,
+  .member-card:nth-child(even) {
+    border-right: 0;
+  }
+
+  .member-role {
+    display: none;
+  }
+
+  .about-section {
+    min-height: 650px;
+    padding: 110px 25px;
+  }
+
+  .about-logo {
+    width: 80vw;
+    right: -15%;
+    bottom: -5%;
+  }
+
+  footer {
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
