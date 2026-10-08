@@ -1,93 +1,110 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* =========================
+     SMOOTH NAVIGATION
+  ========================= */
+
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", event => {
+
+      const targetId = link.getAttribute("href");
+
+      if (!targetId || targetId === "#") return;
+
+      const target = document.querySelector(targetId);
+
+      if (!target) return;
+
+      event.preventDefault();
+
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+    });
+
+  });
+
+
+  /* =========================
+     MEMBER SEARCH + FILTER
+  ========================= */
+
   const searchInput = document.getElementById("memberSearch");
   const filterButtons = document.querySelectorAll(".filter");
-  const memberCards = document.querySelectorAll(".member-card");
-  const memberGroups = document.querySelectorAll(".member-group");
+  const cards = document.querySelectorAll(".member-card");
+  const groups = document.querySelectorAll(".member-group");
   const resultCount = document.getElementById("resultCount");
 
   let currentFilter = "all";
 
-
   function updateMembers() {
 
-    const searchValue = searchInput.value
-      .toLowerCase()
-      .trim();
-
-    let visibleCount = 0;
-
-
-    memberCards.forEach(card => {
-
-      const group = card.closest(".member-group");
-
-      if (!group) return;
-
-      const groupType = group.dataset.group;
-
-      const text = card.innerText
+    const search =
+      searchInput.value
+        .trim()
         .toLowerCase();
 
+    let visible = 0;
+
+    cards.forEach(card => {
+
+      const name =
+        card.dataset.name.toLowerCase();
+
+      const role =
+        card.dataset.role.toLowerCase();
+
+      const group =
+        card.closest(".member-group").dataset.group;
+
       const matchesSearch =
-        text.includes(searchValue);
+        name.includes(search) ||
+        role.includes(search);
 
       const matchesFilter =
         currentFilter === "all" ||
-        groupType === currentFilter;
+        currentFilter === group;
 
-      const shouldShow =
+      const show =
         matchesSearch && matchesFilter;
 
+      card.classList.toggle("hidden", !show);
 
-      if (shouldShow) {
-
-        card.classList.remove("hidden");
-
-        visibleCount++;
-
-      } else {
-
-        card.classList.add("hidden");
-
+      if (show) {
+        visible++;
       }
 
     });
 
 
-    memberGroups.forEach(group => {
+    groups.forEach(group => {
 
       const visibleCards =
         group.querySelectorAll(
           ".member-card:not(.hidden)"
         );
 
-      if (visibleCards.length === 0) {
-
-        group.classList.add("hidden");
-
-      } else {
-
-        group.classList.remove("hidden");
-
-      }
+      group.classList.toggle(
+        "hidden",
+        visibleCards.length === 0
+      );
 
     });
 
 
     resultCount.textContent =
-      `${visibleCount} member${visibleCount === 1 ? "" : "s"} shown`;
-  }
-
-
-  if (searchInput) {
-
-    searchInput.addEventListener(
-      "input",
-      updateMembers
-    );
+      `${visible} MEMBER${visible === 1 ? "" : "S"}`;
 
   }
+
+
+  searchInput.addEventListener(
+    "input",
+    updateMembers
+  );
 
 
   filterButtons.forEach(button => {
@@ -110,43 +127,82 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  /*
-    Smooth scrolling.
-    Keeps the browser's normal scrolling enabled.
-  */
+  /* =========================
+     MEMBER MODAL
+  ========================= */
 
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
+  const modal =
+    document.getElementById("memberModal");
 
-    link.addEventListener("click", event => {
+  const modalClose =
+    document.getElementById("modalClose");
 
-      const targetId =
-        link.getAttribute("href");
+  const modalAvatar =
+    document.getElementById("modalAvatar");
 
-      if (
-        !targetId ||
-        targetId === "#"
-      ) {
-        return;
-      }
+  const modalName =
+    document.getElementById("modalName");
 
-      const target =
-        document.querySelector(targetId);
+  const modalRole =
+    document.getElementById("modalRole");
 
-      if (!target) {
-        return;
-      }
 
-      event.preventDefault();
+  cards.forEach(card => {
 
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+    card.addEventListener("click", () => {
+
+      const name =
+        card.querySelector(".member-name strong").textContent;
+
+      const avatar =
+        card.querySelector(".avatar").textContent;
+
+      const role =
+        card.dataset.role;
+
+      modalName.textContent = name;
+      modalAvatar.textContent = avatar;
+      modalRole.textContent = role;
+
+      modal.classList.add("open");
 
     });
 
   });
 
+
+  function closeModal() {
+    modal.classList.remove("open");
+  }
+
+
+  modalClose.addEventListener(
+    "click",
+    closeModal
+  );
+
+
+  modal.addEventListener("click", event => {
+
+    if (event.target === modal) {
+      closeModal();
+    }
+
+  });
+
+
+  document.addEventListener("keydown", event => {
+
+    if (event.key === "Escape") {
+      closeModal();
+    }
+
+  });
+
+
+  /* =========================
+     INITIAL STATE
+  ========================= */
 
   updateMembers();
 
