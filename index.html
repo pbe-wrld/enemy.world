@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,138 +10,155 @@
 
 <body>
 
-    <!-- TOP NAVIGATION -->
-    <header class="navbar">
-        <img src="assets/top-logo.png" class="top-logo" alt="PUBLIC ENEMY">
+<header class="navbar">
+    <img
+        src="https://media.discordapp.net/attachments/1489145774569951332/1508056143463710870/image-56.png?ex=6ac8c3ba&is=6ac7723a&hm=e6e0ebf227eec8e1facd0b2da74d579246cec88f06614e558b091abc8233477a&=&format=webp&quality=lossless"
+        class="top-logo"
+        alt="PUBLIC ENEMY"
+    >
 
-        <nav>
-            <button data-page="home">WHO</button>
-            <button data-page="profiles">PROFILES</button>
-            <button id="viewer-count">WEBSITE VIEWER COUNT</button>
-        </nav>
-    </header>
+    <nav>
+        <button data-page="home">WHO</button>
+        <button data-page="profiles">PROFILES</button>
+        <button id="viewer-count">WEBSITE VIEWER COUNT</button>
+    </nav>
+</header>
 
 
-    <!-- PAGE 1 / WHO -->
-    <section id="home" class="page active">
+<!-- PAGE 1 -->
+<section id="home" class="page active">
 
-        <div class="home-overlay"></div>
+    <div class="home-overlay"></div>
 
-        <img src="assets/page1-left-logo.png"
-             class="home-left-logo"
-             alt="PUBLIC ENEMY">
+    <img
+        src="https://media.discordapp.net/attachments/1375129451175608402/1557774113634910259/3d6353f7-4c7c-4759-823c-2021f8bc4632.png?ex=6ac905b2&is=6ac7b432&hm=55dbb0847acb50ab4688cd796ac1b942e342c0767aba12aea9d4f33fdc37deb5&=&format=webp&quality=lossless&width=768&height=768"
+        class="home-left-logo"
+        alt="PUBLIC ENEMY"
+    >
 
-        <img src="assets/page1-right-logo.png"
-             class="home-right-logo"
-             alt="PUBLIC ENEMY">
+    <img
+        src="https://media.discordapp.net/attachments/1375129451175608402/1557773938661134468/53142c9b-2b97-40ad-9b9b-8e750d686eab.png?ex=6ac90589&is=6ac7b409&hm=4e4e30c206b5f4a6a15cc3ec389dc9d894db028ec0af41dbd8dda2f9362eb47d&=&format=webp&quality=lossless&width=768&height=768"
+        class="home-right-logo"
+        alt="PUBLIC ENEMY"
+    >
 
-        <div class="home-title">
-            THREAT TO EVERYONE
+    <div class="home-title">
+        THREAT TO EVERYONE
+    </div>
+
+    <div class="profiles-below">
+        PROFILES BELOW
+    </div>
+
+</section>
+
+
+<!-- PAGE 2 -->
+<section id="profiles" class="page profiles-page">
+
+    <div class="profiles-background"></div>
+
+    <div class="profiles-content">
+
+        <img
+            src="https://media.discordapp.net/attachments/1526941627418152970/1557767273060769843/76ad6af0-17eb-44c1-a397-e8f1ef65d410.png?ex=6ac8ff53&is=6ac7add3&hm=8408d36170c886f17c120bec0582bd5fbbe72da5d4eaa42c2f4902640e0e7b1cc&=&format=webp&quality=lossless&width=768&height=768"
+            class="profiles-logo"
+            alt="PUBLIC ENEMY"
+        >
+
+        <div class="rank-tabs">
+            <button class="rank-tab active" data-rank="founder">FOUNDER</button>
+            <button class="rank-tab" data-rank="threats">THREATS</button>
+            <button class="rank-tab" data-rank="enemy">ENEMY</button>
         </div>
 
-        <div class="profiles-below">
-            PROFILES BELOW
-        </div>
+        <div id="profile-grid" class="profile-grid"></div>
 
-    </section>
+    </div>
+</section>
 
 
-    <!-- PAGE 2 / PROFILES -->
-    <section id="profiles" class="page profiles-page">
+<!-- PAGE 3 -->
+<section id="about" class="page about-page">
 
-        <div class="profiles-background"></div>
+    <div class="about-content">
 
-        <div class="profiles-content">
+        <div class="about-left">
 
             <img
-                src="https://media.discordapp.net/attachments/1526941627418152970/1557767273060769843/76ad6af0-17eb-44c1-a397-e8f1ef65d410.png?ex=6ac8ff53&is=6ac7add3&hm=840d36170c886f17c120bec0582bd5fbbe72da5d4eaa42c2f4902640e0e7b1cc&=&format=webp&quality=lossless&width=768&height=768"
-                class="profiles-logo"
+                src="https://media.discordapp.net/attachments/1526941627418152970/1557768137397764137/970b56a1-3b6e-42ec-bbf6-4e0c5e78fc1c.png?ex=6ac90021&is=6ac7aea1&hm=c6be64479e30d15c2a5a2970c9893352c5e9f8a3529454bbf31b2acad50995fb&=&format=webp&quality=lossless&width=768&height=768"
+                class="about-left-logo"
                 alt="PUBLIC ENEMY"
             >
 
-            <div class="rank-tabs">
-                <button class="rank-tab active" data-rank="founder">FOUNDER</button>
-                <button class="rank-tab" data-rank="threats">THREATS</button>
-                <button class="rank-tab" data-rank="enemy">ENEMY</button>
+            <div class="about-text">
+                <p>PUBLIC ENEMY was never about numbers. It was about unity.</p>
+
+                <p>
+                    We’re not loud, but we’re present.<br>
+                    We’re not aggressive, but we don’t fold when it matters.
+                </p>
+
+                <p>
+                    Problems are handled, not dragged. No drama, no unnecessary chaos.
+                </p>
+
+                <p>PUBLIC ENEMY NO PEACE SIGN</p>
             </div>
 
-            <div id="profile-grid" class="profile-grid"></div>
-
-        </div>
-    </section>
-
-
-    <!-- PAGE 3 / ABOUT -->
-    <section id="about" class="page about-page">
-
-        <div class="about-content">
-
-            <div class="about-left">
-
-                <img
-                    src="https://media.discordapp.net/attachments/1526941627418152970/1557768137397764137/970b56a1-3b6e-42ec-bbf6-4e0c5e78fc1c.png?ex=6ac90021&is=6ac7aea1&hm=c6be64479e30d15c2a5a2970c9893352c5e9f8a3529454bbf31b2acad50995fb&=&format=webp&quality=lossless&width=768&height=768"
-                    class="about-left-logo"
-                    alt="PUBLIC ENEMY"
-                >
-
-                <div class="about-text">
-                    <p>PUBLIC ENEMY was never about numbers. It was about unity.</p>
-
-                    <p>
-                        We’re not loud, but we’re present.<br>
-                        We’re not aggressive, but we don’t fold when it matters.
-                    </p>
-
-                    <p>
-                        Problems are handled, not dragged. No drama, no unnecessary chaos.
-                    </p>
-
-                    <p>PUBLIC ENEMY NO PEACE SIGN</p>
-                </div>
-
-                <a
-                    href="https://discord.gg/zHGBSdf4BQ"
-                    target="_blank"
-                    class="join-button"
-                >
-                    JOIN OUR SERVER
-                </a>
-
-            </div>
-
-            <img
-                src="https://media.discordapp.net/attachments/1487874155255824536/1491674563090841730/bf8efb77-3c3a-47ea-85bc-bef41c9cc69d.png?ex=6ac87eb1&is=6ac72d31&hm=f670d9eeac914328ef4f692c7c14e719c850ead7ff59a055dbf3c3d5a5603702&=&format=webp&quality=lossless&width=768&height=736"
-                class="about-right-logo"
-                alt="PUBLIC ENEMY"
+            <a
+                href="https://discord.gg/zHGBSdf4BQ"
+                target="_blank"
+                class="join-button"
             >
+                JOIN OUR SERVER
+            </a>
 
         </div>
 
-    </section>
+        <img
+            src="https://media.discordapp.net/attachments/1487874155255824536/1491674563090841730/bf8efb77-3c3a-47ea-85bc-bef41c9cc69d.png?ex=6ac87eb1&is=6ac72d31&hm=f670d9eeac914328ef4f692c7c14e719c850ead7ff59a055dbf3c3d5a5603702&=&format=webp&quality=lossless&width=768&height=736"
+            class="about-right-logo"
+            alt="PUBLIC ENEMY"
+        >
+
+    </div>
+
+</section>
 
 
-    <!-- PROFILE MODAL -->
-    <div id="profile-modal" class="modal">
+<!-- PROFILE POPUP -->
+<div id="profile-modal" class="modal">
 
-        <div class="modal-box">
+    <div class="modal-box">
 
-            <button class="modal-close">×</button>
+        <button class="modal-close">×</button>
 
-            <img id="modal-image" src="" alt="">
+        <img id="modal-image" src="" alt="">
 
-            <div class="modal-info">
-                <div id="modal-status">DO NOT DISTURB</div>
-                <h2 id="modal-name"></h2>
-                <span id="modal-rank"></span>
-                <p id="modal-description"></p>
-                <blockquote id="modal-quote"></blockquote>
+        <div class="modal-info">
+
+            <div id="modal-status">
+                DO NOT DISTURB
             </div>
+
+            <h2 id="modal-name"></h2>
+
+            <span id="modal-rank"></span>
+
+            <p id="modal-description"></p>
+
+            <blockquote id="modal-quote"></blockquote>
 
         </div>
 
     </div>
 
+</div>
 
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
+
 </body>
 </html>
+```
