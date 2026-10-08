@@ -1,8 +1,3 @@
-/* =========================================
-   PUBLIC ENEMY
-   WEBSITE SCRIPT
-========================================= */
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const searchInput = document.getElementById("memberSearch");
@@ -11,35 +6,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const memberGroups = document.querySelectorAll(".member-group");
   const resultCount = document.getElementById("resultCount");
 
-
   let currentFilter = "all";
 
 
-  /* =========================================
-     MEMBER FILTER
-  ========================================= */
-
   function updateMembers() {
 
-    const searchValue =
-      searchInput.value
-        .toLowerCase()
-        .trim();
+    const searchValue = searchInput.value
+      .toLowerCase()
+      .trim();
 
     let visibleCount = 0;
 
 
     memberCards.forEach(card => {
 
-      const group =
-        card.closest(".member-group");
+      const group = card.closest(".member-group");
 
-      const groupType =
-        group.dataset.group;
+      if (!group) return;
 
-      const text =
-        card.innerText.toLowerCase();
+      const groupType = group.dataset.group;
 
+      const text = card.innerText
+        .toLowerCase();
 
       const matchesSearch =
         text.includes(searchValue);
@@ -48,8 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
         currentFilter === "all" ||
         groupType === currentFilter;
 
+      const shouldShow =
+        matchesSearch && matchesFilter;
 
-      if (matchesSearch && matchesFilter) {
+
+      if (shouldShow) {
 
         card.classList.remove("hidden");
 
@@ -86,23 +77,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     resultCount.textContent =
       `${visibleCount} member${visibleCount === 1 ? "" : "s"} shown`;
-
   }
 
 
-  /* =========================================
-     SEARCH
-  ========================================= */
+  if (searchInput) {
 
-  searchInput.addEventListener(
-    "input",
-    updateMembers
-  );
+    searchInput.addEventListener(
+      "input",
+      updateMembers
+    );
 
+  }
 
-  /* =========================================
-     FILTER BUTTONS
-  ========================================= */
 
   filterButtons.forEach(button => {
 
@@ -124,20 +110,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  /* =========================================
-     INITIAL UPDATE
-  ========================================= */
+  /*
+    Smooth scrolling.
+    Keeps the browser's normal scrolling enabled.
+  */
 
-  updateMembers();
-
-
-  /* =========================================
-     SMOOTH INTERNAL LINKS
-  ========================================= */
-
-  document.querySelectorAll(
-    'a[href^="#"]'
-  ).forEach(link => {
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     link.addEventListener("click", event => {
 
@@ -147,17 +125,18 @@ document.addEventListener("DOMContentLoaded", () => {
       if (
         !targetId ||
         targetId === "#"
-      ) return;
-
+      ) {
+        return;
+      }
 
       const target =
         document.querySelector(targetId);
 
-      if (!target) return;
-
+      if (!target) {
+        return;
+      }
 
       event.preventDefault();
-
 
       target.scrollIntoView({
         behavior: "smooth",
@@ -167,5 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   });
+
+
+  updateMembers();
 
 });
