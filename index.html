@@ -1,164 +1,534 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUBLIC ENEMY</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PUBLIC ENEMY</title>
+  <meta name="description" content="PUBLIC ENEMY — THREAT TO EVERYONE">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-    <img
-        src="https://media.discordapp.net/attachments/1489145774569951332/1508056143463710870/image-56.png?ex=6ac8c3ba&is=6ac7723a&hm=e6e0ebf227eec8e1facd0b2da74d579246cec88f06614e558b091abc8233477a&=&format=webp&quality=lossless"
-        class="top-logo"
-        alt="PUBLIC ENEMY"
-    >
+  <!-- ================= HEADER ================= -->
 
-    <nav>
-        <button data-page="home">WHO</button>
-        <button data-page="profiles">PROFILES</button>
-        <button id="viewer-count">WEBSITE VIEWER COUNT</button>
+  <header class="site-header">
+
+    <a href="#home" class="brand">
+      <span class="brand-name">PUBLIC ENEMY</span>
+      <span class="brand-sub">THREAT TO EVERYONE</span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#members">Collective</a>
+      <a href="#about">About</a>
+      <a href="#members">Members</a>
     </nav>
-</header>
+
+  </header>
 
 
-<!-- PAGE 1 -->
-<section id="home" class="page active">
+  <main id="home">
 
-    <div class="home-overlay"></div>
+    <!-- ================= HERO ================= -->
 
-    <img
-        src="https://media.discordapp.net/attachments/1375129451175608402/1557774113634910259/3d6353f7-4c7c-4759-823c-2021f8bc4632.png?ex=6ac905b2&is=6ac7b432&hm=55dbb0847acb50ab4688cd796ac1b942e342c0767aba12aea9d4f33fdc37deb5&=&format=webp&quality=lossless&width=768&height=768"
-        class="home-left-logo"
-        alt="PUBLIC ENEMY"
-    >
+    <section class="hero">
 
-    <img
-        src="https://media.discordapp.net/attachments/1375129451175608402/1557773938661134468/53142c9b-2b97-40ad-9b9b-8e750d686eab.png?ex=6ac90589&is=6ac7b409&hm=4e4e30c206b5f4a6a15cc3ec389dc9d894db028ec0af41dbd8dda2f9362eb47d&=&format=webp&quality=lossless&width=768&height=768"
-        class="home-right-logo"
-        alt="PUBLIC ENEMY"
-    >
+      <div class="hero-noise"></div>
 
-    <div class="home-title">
-        THREAT TO EVERYONE
-    </div>
-
-    <div class="profiles-below">
-        PROFILES BELOW
-    </div>
-
-</section>
+      <div class="hero-top-line">
+        <span>PUBLIC ENEMY / PBE</span>
+        <span>EST. 2026</span>
+      </div>
 
 
-<!-- PAGE 2 -->
-<section id="profiles" class="page profiles-page">
+      <div class="hero-content">
 
-    <div class="profiles-background"></div>
+        <!-- LEFT LOGO -->
 
-    <div class="profiles-content">
-
-        <img
-            src="https://media.discordapp.net/attachments/1526941627418152970/1557767273060769843/76ad6af0-17eb-44c1-a397-e8f1ef65d410.png?ex=6ac8ff53&is=6ac7add3&hm=8408d36170c886f17c120bec0582bd5fbbe72da5d4eaa42c2f4902640e0e7b1cc&=&format=webp&quality=lossless&width=768&height=768"
-            class="profiles-logo"
-            alt="PUBLIC ENEMY"
-        >
-
-        <div class="rank-tabs">
-            <button class="rank-tab active" data-rank="founder">FOUNDER</button>
-            <button class="rank-tab" data-rank="threats">THREATS</button>
-            <button class="rank-tab" data-rank="enemy">ENEMY</button>
+        <div class="hero-logo hero-logo-left">
+          <img
+            src="https://media.discordapp.net/attachments/1375129451175608402/1557777420231249970/3d6353f7-4c7c-4759-823c-2021f8bc4632-removebg-preview.png?ex=6ac908c7&is=6ac7b747&hm=d3f810127907066b6cb791d142bb9edb8484edef1f7cb12097f06fd69e57d9c2&=&format=webp&quality=lossless"
+            alt="PUBLIC ENEMY left logo"
+          >
         </div>
 
-        <div id="profile-grid" class="profile-grid"></div>
 
-    </div>
-</section>
+        <!-- CENTER -->
 
+        <div class="hero-center">
 
-<!-- PAGE 3 -->
-<section id="about" class="page about-page">
+          <span class="eyebrow">
+            PUBLIC ENEMY / COLLECTIVE
+          </span>
 
-    <div class="about-content">
+          <h1>
+            PUBLIC<br>
+            <span>ENEMY.</span>
+          </h1>
 
-        <div class="about-left">
+          <strong class="hero-statement">
+            THREAT TO<br>
+            EVERYONE
+          </strong>
 
-            <img
-                src="https://media.discordapp.net/attachments/1526941627418152970/1557768137397764137/970b56a1-3b6e-42ec-bbf6-4e0c5e78fc1c.png?ex=6ac90021&is=6ac7aea1&hm=c6be64479e30d15c2a5a2970c9893352c5e9f8a3529454bbf31b2acad50995fb&=&format=webp&quality=lossless&width=768&height=768"
-                class="about-left-logo"
-                alt="PUBLIC ENEMY"
-            >
+          <p>
+            A collective built around identity,
+            loyalty and presence.
+          </p>
 
-            <div class="about-text">
-                <p>PUBLIC ENEMY was never about numbers. It was about unity.</p>
-
-                <p>
-                    We’re not loud, but we’re present.<br>
-                    We’re not aggressive, but we don’t fold when it matters.
-                </p>
-
-                <p>
-                    Problems are handled, not dragged. No drama, no unnecessary chaos.
-                </p>
-
-                <p>PUBLIC ENEMY NO PEACE SIGN</p>
-            </div>
-
-            <a
-                href="https://discord.gg/zHGBSdf4BQ"
-                target="_blank"
-                class="join-button"
-            >
-                JOIN OUR SERVER
+          <div class="hero-actions">
+            <a href="#members" class="button button-light">
+              ENTER COLLECTIVE
+              <span>↓</span>
             </a>
 
+            <a href="#about" class="button button-outline">
+              ABOUT US
+            </a>
+          </div>
+
         </div>
 
-        <img
-            src="https://media.discordapp.net/attachments/1487874155255824536/1491674563090841730/bf8efb77-3c3a-47ea-85bc-bef41c9cc69d.png?ex=6ac87eb1&is=6ac72d31&hm=f670d9eeac914328ef4f692c7c14e719c850ead7ff59a055dbf3c3d5a5603702&=&format=webp&quality=lossless&width=768&height=736"
-            class="about-right-logo"
-            alt="PUBLIC ENEMY"
+
+        <!-- RIGHT LOGO -->
+
+        <div class="hero-logo hero-logo-right">
+          <img
+            src="https://media.discordapp.net/attachments/1375129451175608402/1557777551248859196/53142c9b-2b97-40ad-9b9b-8e750d686eab-removebg-preview.png?ex=6ac908e6&is=6ac7b766&hm=48f0d061664a54f7776607a888a2d021c561c77a9885942b6884e34cad215aa2&=&format=webp&quality=lossless"
+            alt="PUBLIC ENEMY right logo"
+          >
+        </div>
+
+      </div>
+
+
+      <div class="hero-bottom">
+        <span>COLLECTIVE BELOW</span>
+        <span class="arrow">↓</span>
+      </div>
+
+    </section>
+
+
+    <!-- ================= RIBBON ================= -->
+
+    <div class="ribbon">
+      <span>PUBLIC ENEMY</span>
+      <b>/</b>
+      <span>PBE</span>
+      <b>/</b>
+      <span>THREAT TO EVERYONE</span>
+      <b>/</b>
+      <span>PUBLIC ENEMY</span>
+      <b>/</b>
+      <span>PBE</span>
+    </div>
+
+
+    <!-- ================= MEMBERS ================= -->
+
+    <section class="directory" id="members">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          COLLECTIVE / PUBLIC ENEMY
+        </span>
+
+        <h2>
+          COLLECTIVE<span>.</span>
+        </h2>
+
+        <p>
+          Find someone inside the collective.
+        </p>
+
+      </div>
+
+
+      <!-- SEARCH -->
+
+      <div class="member-search">
+
+        <label for="memberSearch">
+          LOOK FOR SOMEBODY
+        </label>
+
+        <div class="search-box">
+
+          <span class="search-icon">⌕</span>
+
+          <input
+            id="memberSearch"
+            type="search"
+            placeholder="Name or handle"
+            autocomplete="off"
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- FILTERS -->
+
+      <div class="filters">
+
+        <button class="filter active" data-filter="all">
+          Everyone
+        </button>
+
+        <button class="filter" data-filter="godfather">
+          Godfather
+        </button>
+
+        <button class="filter" data-filter="highcouncil">
+          Highcouncil
+        </button>
+
+        <button class="filter" data-filter="member">
+          Members
+        </button>
+
+      </div>
+
+
+      <p class="result-count" id="resultCount">
+        12 members shown
+      </p>
+
+
+      <!-- MEMBER GROUPS -->
+
+      <div class="member-groups">
+
+
+        <!-- GODFATHER -->
+
+        <section
+          class="member-group"
+          data-group="godfather"
         >
 
+          <div class="group-heading">
+            <span>Godfather</span>
+            <small>FOUNDERS</small>
+          </div>
+
+
+          <div class="member-grid">
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">SA</div>
+
+              <div class="member-info">
+                <strong>salvatore.am</strong>
+                <span>@salvatore.am</span>
+              </div>
+
+              <div class="member-rank">
+                GODFATHER
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">UJ</div>
+
+              <div class="member-info">
+                <strong>usjrjinu</strong>
+                <span>@usjrjinu</span>
+              </div>
+
+              <div class="member-rank">
+                GODFATHER
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">NK</div>
+
+              <div class="member-info">
+                <strong>noki202</strong>
+                <span>@noki202</span>
+              </div>
+
+              <div class="member-rank">
+                GODFATHER
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">YX</div>
+
+              <div class="member-info">
+                <strong>yoshiiixzz</strong>
+                <span>@yoshiiixzz</span>
+              </div>
+
+              <div class="member-rank">
+                GODFATHER
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">LW</div>
+
+              <div class="member-info">
+                <strong>leywannafck</strong>
+                <span>@leywannafck</span>
+              </div>
+
+              <div class="member-rank">
+                GODFATHER
+                <b>↗</b>
+              </div>
+            </a>
+
+          </div>
+
+        </section>
+
+
+        <!-- HIGHCOUNCIL -->
+
+        <section
+          class="member-group"
+          data-group="highcouncil"
+        >
+
+          <div class="group-heading">
+            <span>Highcouncil</span>
+            <small>COUNCIL</small>
+          </div>
+
+
+          <div class="member-grid">
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">LB</div>
+
+              <div class="member-info">
+                <strong>Lebwak</strong>
+                <span>@lebwak</span>
+              </div>
+
+              <div class="member-rank">
+                HIGHCOUNCIL
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">MJ</div>
+
+              <div class="member-info">
+                <strong>Makijames</strong>
+                <span>@makijames</span>
+              </div>
+
+              <div class="member-rank">
+                HIGHCOUNCIL
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">ST</div>
+
+              <div class="member-info">
+                <strong>Sainty</strong>
+                <span>@sainty</span>
+              </div>
+
+              <div class="member-rank">
+                HIGHCOUNCIL
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">SN</div>
+
+              <div class="member-info">
+                <strong>Sin</strong>
+                <span>@sin</span>
+              </div>
+
+              <div class="member-rank">
+                HIGHCOUNCIL
+                <b>↗</b>
+              </div>
+            </a>
+
+          </div>
+
+        </section>
+
+
+        <!-- MEMBERS -->
+
+        <section
+          class="member-group"
+          data-group="member"
+        >
+
+          <div class="group-heading">
+            <span>Members</span>
+            <small>COLLECTIVE</small>
+          </div>
+
+
+          <div class="member-grid">
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">TY</div>
+
+              <div class="member-info">
+                <strong>Tyler</strong>
+                <span>@tyler</span>
+              </div>
+
+              <div class="member-rank">
+                MEMBER
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">NN</div>
+
+              <div class="member-info">
+                <strong>Nonoy</strong>
+                <span>@nonoy</span>
+              </div>
+
+              <div class="member-rank">
+                MEMBER
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">GF</div>
+
+              <div class="member-info">
+                <strong>Garfield</strong>
+                <span>@garfield</span>
+              </div>
+
+              <div class="member-rank">
+                MEMBER
+                <b>↗</b>
+              </div>
+            </a>
+
+
+            <a class="member-card" href="#">
+              <div class="member-avatar">ST</div>
+
+              <div class="member-info">
+                <strong>Stro</strong>
+                <span>@stro</span>
+              </div>
+
+              <div class="member-rank">
+                MEMBER
+                <b>↗</b>
+              </div>
+            </a>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+      <div class="about-logo">
+
+        <img
+          src="https://media.discordapp.net/attachments/1375129451175608402/1557777551248859196/53142c9b-2b97-40ad-9b9b-8e750d686eab-removebg-preview.png?ex=6ac908e6&is=6ac7b766&hm=48f0d061664a54f7776607a888a2d021c561c77a9885942b6884e34cad215aa2&=&format=webp&quality=lossless"
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="about-content">
+
+        <span class="eyebrow">
+          ABOUT PUBLIC ENEMY
+        </span>
+
+        <h2>
+          OUR OWN<br>
+          <em>SPACE.</em>
+        </h2>
+
+        <p>
+          PUBLIC ENEMY is a collective built around
+          identity, loyalty and the people behind it.
+          This is our space to represent the collective
+          and the people who make it what it is.
+        </p>
+
+        <a
+          class="button button-dark"
+          href="#members"
+        >
+          VIEW COLLECTIVE
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-brand">
+      <strong>PUBLIC ENEMY</strong>
+      <span>THREAT TO EVERYONE</span>
     </div>
 
-</section>
+    <span>
+      PBE / 2026
+    </span>
+
+    <a href="#home">
+      BACK TO TOP ↑
+    </a>
+
+  </footer>
 
 
-<!-- PROFILE POPUP -->
-<div id="profile-modal" class="modal">
-
-    <div class="modal-box">
-
-        <button class="modal-close">×</button>
-
-        <img id="modal-image" src="" alt="">
-
-        <div class="modal-info">
-
-            <div id="modal-status">
-                DO NOT DISTURB
-            </div>
-
-            <h2 id="modal-name"></h2>
-
-            <span id="modal-rank"></span>
-
-            <p id="modal-description"></p>
-
-            <blockquote id="modal-quote"></blockquote>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
-```
