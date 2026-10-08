@@ -1,3 +1,4 @@
+```javascript
 const profiles = {
 
     founder: [
@@ -136,9 +137,7 @@ const profiles = {
 };
 
 
-/* =========================
-   PAGE NAVIGATION
-========================= */
+/* NAVIGATION */
 
 const pages = {
     home: document.getElementById("home"),
@@ -169,9 +168,7 @@ document.querySelectorAll("[data-page]").forEach(button => {
 });
 
 
-/* =========================
-   PROFILE TABS
-========================= */
+/* PROFILE TABS */
 
 const profileGrid = document.getElementById("profile-grid");
 
@@ -227,9 +224,7 @@ document.querySelectorAll(".rank-tab").forEach(tab => {
 });
 
 
-/* =========================
-   PROFILE MODAL
-========================= */
+/* PROFILE MODAL */
 
 const modal = document.getElementById("profile-modal");
 
@@ -250,7 +245,6 @@ function openProfile(profile) {
     modalQuote.textContent = `"${profile.quote}"`;
 
     modal.classList.add("open");
-
 }
 
 
@@ -277,24 +271,23 @@ document.addEventListener("keydown", event => {
 });
 
 
-/* =========================
-   VIEWER COUNT
-========================= */
+/* VIEWER COUNT */
 
 const viewerCount = document.getElementById("viewer-count");
 
 let viewers = localStorage.getItem("pe_viewers");
 
 if (!viewers) {
+
     viewers = Math.floor(Math.random() * 25) + 10;
+
     localStorage.setItem("pe_viewers", viewers);
 }
 
 viewerCount.textContent = `WEBSITE VIEWER COUNT ${viewers}`;
 
 
-/* =========================
-   INITIAL PAGE
-========================= */
+/* START */
 
 renderProfiles("founder");
+```
